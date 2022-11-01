@@ -7,17 +7,35 @@ body {
     padding: 0;
 }
 
-.header,
-.section-1,
+.heading,
 .footer {
     background-color: #1f2937;
+}
+
+.heading {
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
 .header {
     margin-bottom: auto;
     display: flex;
     justify-content: space-between;
-    padding: 18px;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 6px 20px;
+}
+
+.section-1-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
 }
 
 ul {
@@ -36,24 +54,24 @@ ul {
 
 .section-1 {
     display: flex;
-    flex: 1;
     justify-content: center;
     gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .section-1-container {
+    width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 12px;
+    align-items: flex-start;
+    row-gap: 15px;
 }
 
 .section-1-image {
-    height: 350px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
 }
-
 
 .hero-main-text {
     font-size: 48px;
@@ -68,21 +86,30 @@ ul {
 
 .section-2 {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    align-items: center;
-    padding: 18px;
+    align-items: center;   
+    padding: 26px;
     row-gap: 12px;
 }
 
 .image {
     height: 150px;
     width: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 8px;
 }
 
 .image-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150px;
 }
 
 .info-text {
@@ -99,29 +126,47 @@ ul {
 .section-3 {
     background-color: #E5E7EB;
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
+    height: 300px;
+}
+
+.section-3-container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-4 {
     display: flex;
-    flex: 1;
     justify-content: center;
+    padding: 18px;
+    height: 150px;
 }
 
 .section-4-container {
     background-color: #3882F6;
     display: flex;
     align-items: center;
-    padding: 18px;
+    padding: 30px;
     gap: 24px;
+    border-radius: 10px;
 }
 
 .section-4-sub-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.section-4-title {
+    color: #E5E7EB;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.section-4-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
 }
 
 .quote {
@@ -141,8 +186,8 @@ ul {
 .footer {
     margin-top: auto;
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
+    height: 50px;
 }
 
